@@ -1,0 +1,125 @@
+/* Style */
+/*Only reason for using variable is to practice*/
+:root{
+
+
+--yellow: hsl(47, 88%, 63%);
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 50%);
+--black: hsl(0, 0%, 7%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+    background-color: var(--yellow);
+    height: 100vh;
+}
+.main{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.card{
+    background: var(--white);
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 black;
+    padding: 24px;
+}
+
+
+h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h3.first,
+.date, 
+h1{
+margin-bottom: 12px;}
+
+.card_body{
+    margin-bottom: 24px;
+    color: var(--grey);
+}
+
+
+@media (min-width: 600px) {
+    .card{
+        max-width: 384px;
+    }
+    
+    .body{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 1.1;
+        display: inline-block;
+        transition: all .3s ease;
+    }
+    h1:hover{
+        color: var(--yellow);
+    }
+    .card_body{
+        width: 85%;
+    }
+
+   
+}
+
+.header{
+    
+    margin:0 0 24px 0 ;
+    
+}
+
+.header img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+img{
+    display: block;
+}
+
+/*PAragraph and TExt*/
+h3.first{
+    background-color: var(--yellow);
+    display: inline-block;
+   
+    padding: 4px 12px;
+    
+}
+
+.date, h3.first{font-size: 12px;}
+.name, .card_body{
+    font-size: 14px;
+}
+
+.card_footer{
+    display: flex;
+    align-items: center;
+}
+
+.img-container{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 12px;
+    background-image: url('/assets/images/image-avatar.webp') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
